@@ -24,6 +24,10 @@ mongoose.connect(
 // Route
 app.use("/task", require("./routes/taskRoute"));
 
+app.route("/").get((req,res) => {
+  res.json("First REST API");
+});
+
 app.listen(process.env.PORT, () => {
   console.log(`Listening on port ${process.env.PORT}`);
 });
