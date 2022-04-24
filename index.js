@@ -30,6 +30,6 @@ app.route("/").get((req,res) => {
 
 const port = process.env.PORT || 8080
 
-app.listen(Port, (req,res) => {
+app.listen(port, (req,res) => {
   console.log(`Listening on ${port}`);
 });
